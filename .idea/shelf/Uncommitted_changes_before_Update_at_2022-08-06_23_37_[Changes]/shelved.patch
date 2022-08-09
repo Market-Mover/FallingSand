@@ -1,0 +1,44 @@
+Index: src/falling/sand/Sand.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package falling.sand;\r\n\r\nimport java.awt.Color;\r\nimport java.awt.Graphics;\r\n\r\npublic class Sand {\r\n\r\n    private int x, y;\r\n\r\n    public Sand(int x, int y) {\r\n        this.x = x;\r\n        this.y = y;\r\n    }\r\n\r\n    public void render(Graphics g) {\r\n        g.setColor(Color.yellow);\r\n        g.drawRect(this.x, this.y, 1, 1);\r\n    }\r\n\r\n    public int getX() {\r\n        return this.x;\r\n    }\r\n    public int getY() {\r\n        return this.y;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/falling/sand/Sand.java b/src/falling/sand/Sand.java
+--- a/src/falling/sand/Sand.java	(revision 7e25a3ed8afcff38d40aa96a2e32b46f87a38646)
++++ b/src/falling/sand/Sand.java	(date 1659821799905)
+@@ -5,7 +5,8 @@
+ 
+ public class Sand {
+ 
+-    private int x, y;
++    private final int x;
++    private final int y;
+ 
+     public Sand(int x, int y) {
+         this.x = x;
+Index: src/falling/sand/SandManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package falling.sand;\r\n\r\nimport falling.sand.input.ClickType;\r\nimport falling.sand.input.Mouse;\r\n\r\nimport java.awt.Graphics;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class SandManager {\r\n\r\n    private List<Sand> sandList;\r\n    private Mouse mouse;\r\n\r\n    public SandManager() {\r\n        this.sandList = new ArrayList<Sand>();\r\n    }\r\n\r\n    public void init(Mouse mouse) {\r\n        this.sandList.add(new Sand(100, 100));\r\n        this.mouse = mouse;\r\n    }\r\n\r\n    public void update() {\r\n        if (this.mouse.getButton() == ClickType.LeftClick) {\r\n            // Adding sand!\r\n            int mX = this.mouse.getX();\r\n            int mY = this.mouse.getY();\r\n\r\n            if (this.findSand(mX, mY) == null) {\r\n                this.sandList.add(new Sand(mX, mY));\r\n            }\r\n        }\r\n    }\r\n\r\n    public void render(Graphics g) {\r\n        for (Sand sand : this.sandList) {\r\n            sand.render(g);\r\n        }\r\n    }\r\n\r\n    private Sand findSand(int x, int y){\r\n        Sand sand = null;\r\n\r\n        for(Sand s : this.sandList) {\r\n            if(s.getX() == x && s.getY() == y) {\r\n                sand = s;\r\n            }\r\n        }\r\n\r\n        return sand;\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/falling/sand/SandManager.java b/src/falling/sand/SandManager.java
+--- a/src/falling/sand/SandManager.java	(revision 7e25a3ed8afcff38d40aa96a2e32b46f87a38646)
++++ b/src/falling/sand/SandManager.java	(date 1659821799896)
+@@ -9,11 +9,11 @@
+ 
+ public class SandManager {
+ 
+-    private List<Sand> sandList;
++    private final List<Sand> sandList;
+     private Mouse mouse;
+ 
+     public SandManager() {
+-        this.sandList = new ArrayList<Sand>();
++        this.sandList = new ArrayList<>();
+     }
+ 
+     public void init(Mouse mouse) {

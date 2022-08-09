@@ -13,14 +13,14 @@ public class Display extends Canvas implements Runnable {
     private static final long serialVersionUID = 1L;
 
     private Thread thread;
-    private JFrame frame;
-    private static String title = "3D Renderer";
+    private final JFrame frame;
+    private static final String title = "3D Renderer";
     public static final int WIDTH = 800;
     public static final int HEIGHT = 600;
     private static boolean running = false;
 
-    private SandManager sandManager;
-    private Mouse mouse;
+    private final SandManager sandManager;
+    private final Mouse mouse;
 
 
     public Display( )
@@ -129,9 +129,12 @@ public class Display extends Canvas implements Runnable {
 
     }
 
-    private void update( )
-    {
-        this.sandManager.update();
+    private void update( ) {
+        // sim speed
+        int simSpeed = 3;
+        for (int i = 0; i < simSpeed; i++) {
+            this.sandManager.update();
+        }
 
     }
 

@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="928a3a33-b3b8-4cc1-b302-afb400c5151e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FallingSand.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/falling/sand/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/falling/sand/Sand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/falling/sand/SandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/falling/sand/input/ClickType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/falling/sand/input/Mouse.java" afterDir="false" />
+    <list default="true" id="928a3a33-b3b8-4cc1-b302-afb400c5151e" name="Changes" comment="if this works">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/falling/sand/Sand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/falling/sand/Sand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/falling/sand/SandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/falling/sand/SandManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +38,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,6 +50,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659808452786</updated>
     </task>
+    <task id="LOCAL-00001" summary="if this works">
+      <created>1659820455013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659820455013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,6 +69,17 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
@@ -101,6 +111,22 @@
     </option>
     <option name="RECENT_FILTERS">
       <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
         <entry key="User">
           <value>
             <list>
@@ -114,6 +140,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="if this works" />
+    <option name="LAST_COMMIT_MESSAGE" value="if this works" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

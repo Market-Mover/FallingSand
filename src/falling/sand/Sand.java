@@ -5,7 +5,8 @@ import java.awt.Graphics;
 
 public class Sand {
 
-    private int x, y;
+    public int x, y;
+
 
     public Sand(int x, int y) {
         this.x = x;
@@ -17,10 +18,5 @@ public class Sand {
         g.drawRect(this.x, this.y, 1, 1);
     }
 
-    public int getX() {
-        return this.x;
-    }
-    public int getY() {
-        return this.y;
-    }
 }
+
